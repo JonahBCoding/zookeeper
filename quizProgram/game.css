@@ -1,0 +1,66 @@
+body {
+    color: #fff;
+}
+.hud-container {
+    display: flex;
+    flex-direction: row;
+    float: right;
+}
+
+.scoreboard {
+    margin-right: 5rem;
+}
+
+.timer {
+    margin-right: 5rem;
+}
+
+.question-text {
+    color: white;
+    background: blue;
+    border-radius: 4px;
+    font-size: 2.5rem;
+    width: 60%;
+    margin-left: 2rem;
+    margin-top: 3rem;
+}
+
+.choice-text {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: space-around;
+    margin-bottom: 0.8rem;
+    margin-left: 2rem ;
+    width: 60%;
+    border-radius: 4px;
+    background: blue;
+    font-size: 1rem;
+    min-width: 88rem;
+}
+
+.choice-text:hover {
+    cursor: pointer;
+    box-shadow: blueviolet;
+    transform: scale(1.02);
+    transform: transform 100ms;
+}
+
+.correct {
+    background: green;
+}
+
+.incorrect {
+    background: red;
+}
+
+
+
+/* Heads up Display */
+ 
+
+@media screen and  (max-width: 768px) {
+    .choice-container {
+        min-width: 40rem;
+    }
+}
